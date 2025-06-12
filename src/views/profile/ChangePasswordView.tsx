@@ -92,7 +92,7 @@ export default function ChangePasswordView() {
             { errors.new_password_repeat && <ErrorMessage>{ errors.new_password_repeat.message }</ErrorMessage> }
           </div>
 
-          <InputSubmit value={['Cambiar Password', 'Guardando...']} isPending={isPending}/>
+          <InputSubmit value={['Cambiar Password', 'Guardando...']} isPending={isPending} color="fuchsia"/>
         </form>
       </div>
     </>

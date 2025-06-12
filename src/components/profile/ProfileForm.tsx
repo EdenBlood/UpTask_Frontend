@@ -78,7 +78,7 @@ export default function ProfileForm({user}: ProfileFormProps) {
             {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
           </div>
 
-          <InputSubmit value={["Guardar Cambios", "Guardando..."]} isPending={isPending} />
+          <InputSubmit value={["Guardar Cambios", "Guardando..."]} isPending={isPending} color='fuchsia'/>
         </form>
       </div>
     </>
