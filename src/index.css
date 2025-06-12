@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/src/assets/fonts/Outfit-Thin.woff2') format('woff2');
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.div-input {
+  @apply flex flex-col gap-4;
+}
+.input {
+  @apply w-full p-2.5 border border-slate-300 dark:border-slate-400 text-white dark:bg-transparent dark:placeholder:text-slate-300;
+}
+
+.form {
+  @apply space-y-6 mt-6 bg-white dark:bg-gray-700/80 rounded-xl p-10 shadow-lg
+}
+
+.form-auth {
+  @apply space-y-6 mt-6 bg-white rounded-xl p-10 shadow-lg text-black
+}

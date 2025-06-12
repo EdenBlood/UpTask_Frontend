@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpTask</title>
+  </head>
+  <body class="transition-colors duration-500 bg-slate-100 text-black dark:bg-gray-950/90 dark:text-slate-100 font-[Outfit]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      const theme = localStorage.getItem("UpTask_Theme");
+      if (theme === "dark") document.documentElement.classList.add("dark");
+    </script>
+  </body>
+</html>
